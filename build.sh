@@ -5,7 +5,7 @@ mkdir ~/bin
 curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
 chmod a+x ~/bin/repo
 cd ~/rr
-repo init -u https://github.com/ResurrectionRemix/platform_manifest.git -b oreo --depth=1
+repo init -u https://github.com/ResurrectionRemix/platform_manifest.git -b oreo --depth=1 --groups=all,-notdefault,-device,-darwin,-x86,-mips,-exynos5
 mkdir ~/rr/.repo/local_manifests
 cp ~/buildscript/manifest.xml ~/rr/.repo/local_manifests
 repo sync
